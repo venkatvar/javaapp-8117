@@ -8,7 +8,7 @@ image:
   pullPolicy: IfNotPresent
 service:
   name: javaapp-8117
-  type: ClusterIP
+  type: NodePort
   externalPort: 80
   internalPort: 8080
   annotations:
