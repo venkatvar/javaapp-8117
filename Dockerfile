@@ -11,4 +11,4 @@ EXPOSE 8080
 CMD java -jar /data/app.jar
 
 #copy hello world to docker image
-RUN cp ./target/hello*.jar /data/app.jar
+COPY target/*.jar /data/app.jar
